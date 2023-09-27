@@ -43,3 +43,4 @@ Description - Vision based methods using deep learning such as CNN to perform te
 - Manav Jain (Leader): https://github.com/manavjain2005
 - Harsh Singh : https://github.com/hharshas
 - Abhinav Jain : https://github.com/jainjabhi05
+- Aadhya Jain : https://github.com/aadhya0002
