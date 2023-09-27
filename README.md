@@ -32,7 +32,7 @@ Description - Vision based methods using deep learning such as CNN to perform te
 ### Learning Curve
 ![WhatsApp Image 2023-09-27 at 18 38 18](https://github.com/manavjain2005/SIH2023-23/assets/112813661/721b1fb0-2cab-4a00-8f10-d8bd5e9cab15)
 
-## Integrating Web-Development
+# Integrating Web-Development
 - The model is deployed using `Streamlit` library
 - we `Pickeled` the model for its interation with Streamlit's "app.py"
 - `Image uploader` coloumn that uploads image to model and recieves predicted index as return value
@@ -41,3 +41,4 @@ Description - Vision based methods using deep learning such as CNN to perform te
 
 # Contributors
 - Manav Jain (Leader): https://github.com/manavjain2005
+- Harsh Singh : https://github.com/hharshas
