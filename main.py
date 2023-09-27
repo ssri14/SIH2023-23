@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as com
 from streamlit_option_menu import option_menu
 
 import pandas as pd
@@ -16,9 +17,42 @@ from albumentations.pytorch import ToTensorV2
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 
+st.set_page_config(
+    page_title="Terrain Identifier",
+    page_icon="⛰️",
+    # layout="wide"
+)
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+.stDeployButton {visibility: hidden;}
+.text_head {
+    font-size: 52px;
+    color: #7B7648;
+    line-height: 55px;
+    max-width: 500px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    }
+</style>
 
-# import firebase_admin
-# from firebase_admin import auth, credentials 
+"""
+
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+.stDeployButton {visibility: hidden;}
+</style>
+
+"""
+
+with open("style.css") as source:
+    design = source.read()
 
 
 transform=transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.4914,0.4822,0.4655),(0.2023,0.1994,0.2010))])
@@ -38,12 +72,7 @@ def predict_terrain(image):
    return idx.item()
     
 def main():
-    st.title("upload image")
-    html_temp = """
-    <div>classification</div>
-    """
-
-    st.markdown(html_temp,unsafe_allow_html=True)
+    st.header("UPLOAD PHOTOS")
     image=st.file_uploader("Please upload an image")
     result=0
     if image is not None:
@@ -51,10 +80,9 @@ def main():
     if st.button("Predict"):
         result=predict_terrain(image)
         result=result+1
-    st.success('The terrain is {}'.format(classes[result]))
+    st.success('The Terrain Is {}'.format(classes[result]))
 
 if __name__=='__main__':
     main()
 
-
-
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
