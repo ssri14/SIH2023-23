@@ -1,0 +1,15 @@
+/* Remove overflow */
+html,body{
+    margin: 0px;height: 100%;
+}
+.text-blk.section-head {
+    font-size: 52px;
+    color: #7B7648;
+    line-height: 55px;
+    max-width: 500px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
