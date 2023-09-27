@@ -33,4 +33,4 @@ Description - Vision based methods using deep learning such as CNN to perform te
 ![WhatsApp Image 2023-09-27 at 18 38 18](https://github.com/manavjain2005/SIH2023-23/assets/112813661/721b1fb0-2cab-4a00-8f10-d8bd5e9cab15)
 
 # Contributors
-- Manav Jain: 
+- Manav Jain (Leader): https://github.com/manavjain2005
