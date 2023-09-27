@@ -44,3 +44,5 @@ Description - Vision based methods using deep learning such as CNN to perform te
 - Harsh Singh : https://github.com/hharshas
 - Abhinav Jain : https://github.com/jainjabhi05
 - Aadhya Jain : https://github.com/aadhya0002
+- Dyuti Ballav Paul : https://github.com/dyuti01
+- Pratham Todi : https://github.com/pra1ham28
