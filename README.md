@@ -3,7 +3,7 @@
 # SIH2023-23
 ### Team Terrainto
 # Problem Statement `(SIH1418)`
-Description - Vision based methods using deep learning such as CNN to perform terrain recognition (sandy/rocky/grass/marshy) enhanced with implicit quantities information such as the roughness, slipperiness, an important aspect for high-level environment perception.
+**Description** - Vision based methods using deep learning such as CNN to perform terrain recognition **(sandy/rocky/grass/marshy)** enhanced with implicit quantities information such as the roughness, slipperiness, an important aspect for high-level environment perception.
 - **Deployed ML model link:** https://terrain.streamlit.app/
 # Python Libraries:
 - Numpy
@@ -17,7 +17,7 @@ Description - Vision based methods using deep learning such as CNN to perform te
 - Streamlite
 
 # Machine Learning Model:
-- `ResNet18 (pre-trained)` with one `Fully Connected Layer` predicting `4 classes`
+- `ResNet18 (pre-trained)` with one `Fully Connected Layer`(512 x 4) predicting `4 classes`
 ### Dataset
 - 31517 `training` images with `4 classes` namely `Grassy`, `Marshy`, `Rocky`, `Sandy`
 - 6765 `validation` images and 6769 `test` images
@@ -25,10 +25,10 @@ Description - Vision based methods using deep learning such as CNN to perform te
 
 ### Training
 - The pre-trained layers are `freezed` and only the last `FC layer` was trainined for 1 complete pass through all the samples.
-- Mini_batch size: 32
+- `Mini_batch size`: 32
 ### Validation
 - Accuracy on `validation_set` 91.1 % and on `test_set` 93.8%
-- Mini_batch size: 32
+- `Mini_batch size`: 32
 ### Learning Curve
 ![WhatsApp Image 2023-09-27 at 18 38 18](https://github.com/manavjain2005/SIH2023-23/assets/112813661/721b1fb0-2cab-4a00-8f10-d8bd5e9cab15)
 
